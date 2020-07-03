@@ -1,1 +1,989 @@
+@charset "utf-8";
+/* CSS Document */
 
+@font-face {
+    font-family: "Helvetica Neue eText Pro Light";
+    src: url("https://www07.abb.com/cdn/Fontsv2/073c8e25-ce68-4e9c-9e3a-52091c33b588.eot");
+    src: url("https://www07.abb.com/cdn/Fontsv2/073c8e25-ce68-4e9c-9e3a-52091c33b588.eot?#iefix") format("embedded-opentype"), url("https://www07.abb.com/cdn/Fontsv2/fbe7315f-4680-4300-b5ca-8baa628b47ca.woff") format("woff"),
+        url("https://www07.abb.com/cdn/Fontsv2/82be718c-b7fc-4131-8540-3cafa06955fe.ttf") format("truetype"),
+        url("https://www07.abb.com/cdn/Fontsv2/78581280-33d7-4ee6-8e01-155f8ddcea8d.svg#78581280-33d7-4ee6-8e01-155f8ddcea8d") format("svg");
+}
+
+body {
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+    background-color: #f9f9f9 !important;
+    margin: 0;
+    padding: 0;
+}
+/* unvisited link */
+a:link {
+    color: #969696;
+}
+
+/* visited link */
+a:visited {
+    color: #969696;
+}
+
+/* mouse over link */
+a:hover {
+    color: #777777;
+}
+
+/* selected link */
+a:active {
+    color: #969696;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+img.img-responsive.banner {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    margin-right: -15px;
+}
+.banner {
+    background: linear-gradient(#ff000f, #8b0504) !important;
+    width: 100%;
+}
+
+.redcursor {
+    color: #ff000f;
+    padding: 0px;
+	margin: 0px;
+}
+
+ul li {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+}
+
+h1.regular {
+    font-size: 40px;
+    margin: 0px;
+    font-weight: 400;
+    color: #000000;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-style: normal;
+}
+
+h1.light {
+    font-size: 30px;
+    margin-bottom: 4px;
+    font-weight: 100;
+    color: #000000;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-style: normal;
+}
+h2.regular {
+    font-size: 34px;
+	margin-top: 0px;
+    margin-bottom: 4px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 40px;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-style: normal;
+}
+h2.light {
+    font-size: 40px;
+    color: #333333;
+    font-weight: 100;
+    margin-top: 4px;
+    margin-bottom: 24px;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+}
+
+h3.regular {
+    font-size: 24px;
+    margin-bottom: 4px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 40px;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-style: normal;
+}
+
+h3.form {
+    font-size: 22px;
+    margin-bottom: 4px;
+    font-weight: 400;
+    color: #454747;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-style: normal;
+}
+
+h3.light {
+    font-size: 24px;
+    margin-bottom: 4px;
+    font-weight: 100;
+    color: #000000;
+    line-height: 40px;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-style: normal;
+}
+h3.title {
+    line-height: normal;
+    margin-bottom: 3px;
+    font-weight: bold;
+    color: #000000;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+
+h4.category {
+    margin-bottom: 3px;
+    margin-top: 0px;
+    font-weight: 100;
+    color: #999999;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+h4.category a,
+a:visited {
+    margin-bottom: 0px;
+    font-weight: 100;
+    color: #ff000f;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-style: normal;
+}
+h4.category a:hover {
+    margin-bottom: 3px;
+    font-weight: 100;
+    color: #ff000f;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-style: normal;
+}
+
+h4.title {
+    margin-bottom: 3px;
+    font-weight: 400;
+    color: #000000;
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-style: normal;
+}
+
+.content {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    padding-bottom: 0px;
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+div.content {
+    width: 100%;
+}
+
+p {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.logobox {
+    padding: 36px;
+}
+
+.footer {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    padding-top: 24px;
+}
+
+p.footer {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    color: #fafafa;
+    font-size: 11px;
+    padding-top: 0px;
+    padding-left: 24px;
+    line-height: normal;
+}
+
+.footer a,
+.footer a:visited {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    color: #fafafa;
+    font-size: 11px;
+    text-decoration: underline;
+}
+.footer a:hover {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    color: #fafafa;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+h3,
+h3.modal-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+}
+h3.modal-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.container {
+    background-color: #ffffff;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.modal-header {
+    border-bottom: none;
+}
+
+
+.btn,
+a.btn {
+    background-color: #ff000f;
+    color: #ffffff;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #ff000f;
+    border-radius: 24px 24px 24px 24px;
+}
+.btn:link,
+.btn:visited,
+.btn:active,
+a.btn:link,
+a.btn:visited,
+a.btn:active {
+    color: #ffffff;
+}
+.btn:hover,
+a.btn:hover {
+    color: #ffffff;
+}
+.hero {
+    clear: both;
+    background-color: #f4f5f5;
+}
+.hero h1 {
+    font-size: 2.75em;
+    line-height: 1;
+    color: #000000;
+    margin-top: 10px;
+}
+.hero p.tagline {
+    font-size: 1.25em;
+    color: #454747;
+    margin-bottom: 20px;
+}
+li.resp-tab-active {
+    background-color: #999999;
+    color: #ffffff !important;
+    border: 0 !important;
+}
+
+.grayTxt {
+    color: #969696;
+}
+.resp-vtabs .resp-tabs-container {
+    width: 48%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    padding-right: 10px;
+    border: 1px solid #c1c1c1;
+}
+.resp-vtabs .resp-tabs-container p {
+    margin: 20px 0;
+}
+
+.speakers {
+    padding-right: 0px !important;
+}
+.speakers img {
+    width: 50px;
+    height: auto;
+    margin-right: 7px;
+}
+.speakers p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1em;
+    line-height: 1.25;
+}
+.speaker-title {
+    font-size: 0.9em;
+    color: #969696;
+}
+
+.producer {
+    background-color: #969696;
+    color: #ffffff;
+    line-height: 3;
+    padding: 24px;
+}
+.copyright p {
+    font-size: 0.9em;
+    line-height: 2;
+    color: #ffffff;
+}
+.copyright p a {
+    color: #ffffff;
+}
+
+.callout-bottom {
+    background-color: #f9f9f9;
+}
+.callout-bottom-inner {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 2em;
+}
+.callout-bottom-inner h4 {
+    margin-bottom: 1.25em;
+}
+.callout-bottom-inner p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+label {
+    display: inline-block;
+    margin-bottom: 4px !important;
+    margin-top: 12px;
+    font-size: 13px;
+}
+span {
+    font-size: 14px;
+}
+
+div.formContainer {
+    position: relative;
+    width: 63%;
+}
+div.textContainer {
+    text-align: left;
+}
+div.readMore {
+    display: block;
+    text-align: right;
+    padding-right: 12px;
+}
+
+div.mobileForm {
+    position: absolute;
+    padding: 24px;
+    background-color: #ececec;
+    width: 320px;
+    top: 0;
+    left: 113.5%;
+    float: right;
+}
+
+div.form-icon {
+    text-align: center;
+    margin-top: -50px;
+    display: none;
+}
+
+div.form-icon img {
+    width: 51px;
+    height: 50px;
+    display: none;
+}
+
+input#btnSubmit.download-btn {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-size: 16px;
+    width: 180px;
+    height: 40px;
+    font-weight: Bold;
+    text-align: center;
+    text-justify: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #ff000f;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #ff000f;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+.download-btn {
+    padding: 1px;
+    background-color: #ff000f;
+    cursor: pointer;
+    border: 1px solid #ff000f;
+    border-radius: 20px 20px 20px 20px;
+    margin: auto;
+    height: 32px;
+}
+
+INPUT[type="text"] {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 24px;
+    background-color: #ffffff;
+    color: #3c3c3c;
+    border: 1px solid #d2d2d2;
+    padding: 6px 4px 2px 4px;
+    vertical-align: text-bottom;
+}
+
+INPUT[type="email"] {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: 24px;
+    background-color: #ffffff;
+    color: #3c3c3c;
+    border: 1px solid #d2d2d2;
+    padding-left: 2px;
+}
+div#country {
+    width: 100% !important;
+    border: 1px solid #d2d2d2;
+}
+select#country {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    width: 97% !important;
+    height: 16px;
+    padding-right: 0px;
+    box-sizing: initial;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: #ffffff;
+    color: #868686;
+    cursor: pointer;
+    border: 1px solid #d2d2d2;
+    padding: 3px 3px 3px 3px;
+    font-size: 14px;
+    -webkit-appearance: menulist;
+}
+select#state {
+    font-family: "ABBvoice", Helvetica, Arial, Sans-serif;
+    width: 97% !important;
+    height: 16px;
+    padding-right: 0px;
+    box-sizing: initial;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: #ffffff;
+    color: #868686;
+    cursor: pointer;
+    border: 1px solid #d2d2d2;
+    padding: 3px 3px 3px 3px;
+    font-size: 14px;
+    -webkit-appearance: menulist;
+}
+select:hover {
+    background-color: #868686 !important;
+    color: #ffffff !important;
+}
+
+select:select {
+    background-color: #868686 !important;
+    color: #ffffff !important;
+}
+
+input:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-color: #d2d2d2;
+    outline-style: auto;
+    outline-width: 5px;
+}
+
+TEXTAREA {
+    overflow: auto;
+    font-size: 11px;
+    width: 96%;
+}
+div.backTop {
+    text-align: right;
+}
+
+@media (min-width: 1200px) {
+    .hero p.tagline {
+        font-size: 1.25em;
+        color: #454747;
+        margin-bottom: 20px;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+}
+
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  
+    div.formContainer {
+        position: relative;
+        width: 725px;
+        margin-left: 34px;
+        margin-right: 0px;
+    }
+    div.textContainer {
+        display: inline-block;
+    }
+    div.mobileForm {
+        display: inline-block;
+        width: 320px;
+        position: absolute;
+        left: 100%;
+        top: -186px;
+        float: right;
+    }
+    
+}
+@media screen and (min-width: 992px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p.tagline {
+        font-size: 1.25em;
+    }
+    .resp-vtabs .resp-tabs-container {
+        width: 48%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        height: 100%;
+        margin-left: 0px;
+        margin-bottom: 45px;
+        padding-right: 10px;
+        border: 1px solid #c1c1c1;
+    }
+}
+@media screen and (min-width: 769px) {
+    .navbar {
+        margin-bottom: 0px;
+    }
+    .navbar-brand {
+        padding-left: 5px;
+        margin-bottom: 15px;
+    }
+    .navbar-nav {
+        margin-bottom: 0px;
+    }
+    .navbar-nav > li {
+        line-height: 1;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .navbar-nav > li > a {
+        line-height: 1;
+        padding-top: 30px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    img.img-responsive.banner {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .hero {
+        margin-bottom: 0;
+    }
+    .hero h1 {
+        max-width: 545px;
+    }
+    h2.tab-header {
+        font-size: 18px;
+        padding-top: 9px;
+    }
+
+    .tabs-container {
+        border: 0px solid #d2d2d2;
+    }
+    #parentVerticalTab ul {
+        padding-top: 0px;
+        padding-left: 0px;
+        border-right: 0px solid #d2d2d2;
+    }
+    #parentVerticalTab ul > p {
+        font-weight: 300;
+        padding-left: 15px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    #parentVerticalTab ul > h2 {
+        font-size: 1.66em;
+        font-weight: 400;
+        color: #ff000f;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        padding-left: 15px;
+    }
+    #parentVerticalTab ul > li > h2 {
+        margin-top: 0;
+    }
+    #parentVerticalTab ul > li.border-bottom {
+        border-bottom: 1px solid #d2d2d2;
+    }
+    div.panel-title {
+        display: inline-flex;
+        width: 55%;
+        font-size: 1.1em;
+        line-height: normal;
+        font-weight: 600;
+        margin-top: 0;
+    }
+    div.panel-time {
+        display: inline-flex;
+        width: 24%;
+        font-size: 1em;
+        text-align: right !important;
+        color: #969696;
+        margin-top: 0;
+        margin-left: 5%;
+    }
+    div.panel-arrow {
+        display: inline-flex;
+        width: 14%;
+        text-align: right !important;
+        color: #969696;
+        margin-top: 0;
+    }
+    .panel-time {
+        text-align: right !important;
+    }
+    #parentVerticalTab ul > li.resp-tab-active > div.panel-time,
+    #parentVerticalTab ul > li.resp-tab-active > div.panel-arrow {
+        color: #ffffff;
+    }
+    .resp-tab-content {
+        padding-right: 5px;
+    }
+    .resp-tabs-list > li {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .resp-vtabs li.resp-tab-active {
+        background-color: #999999 !important;
+        color: #ffffff !important;
+        border: 0 !important;
+    }
+    .resp-vtabs ul.resp-tabs-list {
+        width: 50%;
+        border-left: 0px solid #d2d2d2;
+    }
+    .resp-vtabs .resp-tabs-container {
+        width: 48%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        height: auto;
+        margin-left: 0px;
+        margin-bottom: 45px;
+        padding-right: 10px;
+        border: 1px solid #c1c1c1;
+    }
+    .resp-vtabs .resp-tabs-container img.img-responsive {
+        margin-bottom: 20px;
+    }
+
+    .callout-bottom {
+        background-color: #f9f9f9;
+    }
+}
+
+/* media query 375px for Iphone X / XR /XS viewing in Chrome browser */
+
+@media only screen and (max-width: 375px), handheld and (orientation: landscape) {
+   
+    .banner {
+        width: 370px !important;
+        margin: 0px !important;
+    }
+
+    h1.redcursor,
+    h3,
+    h3.light {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    INPUT[type="text"] {
+        font-size: 14px !important;
+    }
+    div.formContainer {
+        position: relative;
+        width: 360px !important;
+        margin-left: 0px;
+    }
+    div.mobileForm {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+        padding-left: 2px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    div.content {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner {
+        background-color: #687a8f;
+        width: 760px;
+        height: auto;
+    }
+
+    .logobox {
+        padding-left: 0px;
+    }
+
+    div.formContainer {
+        position: relative;
+        width: 760px;
+        margin-left: 0px;
+    }
+    div.mobileForm {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    div.form-icon {
+        text-align: center;
+        margin-top: -50px;
+        display: block;
+    }
+    div.form-icon img {
+        width: 51px;
+        height: 50px;
+        display: inline-block;
+    }
+    .navbar {
+        margin-bottom: 10px;
+    }
+    .navbar-brand {
+        padding-left: 0;
+    }
+    .navbar-nav > li > a {
+        text-align: center;
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+    .navbar-nav li a.registerBtn {
+        display: inline-block;
+        background-color: #eece23;
+        line-height: 35px;
+        color: #000000;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 5px auto;
+        padding: 7px 25px;
+    }
+    .hero {
+        background-position: right top;
+        padding: 1em;
+    }
+
+    h2.tab-header {
+        font-size: 18px;
+        padding-top: 8px;
+    }
+    div.panel-title {
+        display: block;
+        font-size: 1.2em;
+        width: 100%;
+        line-height: 1.05;
+        font-weight: 600;
+        margin-top: 0;
+        padding-right: 25px;
+    }
+    div.panel-time {
+        display: block;
+        clear: left;
+        width: 100%;
+        font-size: 0.9em;
+        text-align: left !important;
+        color: #969696;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    div.panel-arrow {
+        display: block;
+        width: 100%;
+    }
+    /*#parentVerticalTab ul > li > div.panel-title { max-width:65%; }
+	#parentVerticalTab ul > li > div.panel-time { width:20%; margin-left:5%; }*/
+    .callout-bottom {
+        padding: 2em;
+    }
+    .hidden-md,
+    hidden-xs {
+        display: none;
+        visibility: hidden;
+    }
+    .banner {
+        display: none;
+    }
+}
+@media screen and (max-width: 667px) {
+    .navbar-brand {
+        padding: 8px 9px 0px 9px;
+    }
+    .hidden-md,
+    hidden-xs {
+        display: none;
+        visibility: hidden;
+    }
+    div.panel-arrow {
+        display: none;
+        visibility: hidden;
+    }
+
+    img.img-responsive.banner {
+        margin-left: 0px !important;
+    }
+}
+@media screen and (max-width: 480px), handheld and (orientation: landscape) {
+
+    .banner {
+        width: 460px;
+        margin: 0px;
+    }
+
+    .logobox {
+        padding-right: 8px;
+    }
+    .block {
+        width: 460px;
+    }
+
+    h1.redcursor,
+    h3,
+    h3.light {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    h3.form {
+        padding-left: 0px;
+    }
+
+    INPUT[type="text"] {
+        font-size: 14px !important;
+    }
+    div.formContainer {
+        position: relative;
+        width: 460px;
+        margin-left: 0px;
+    }
+    div.mobileForm {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    div.form-icon {
+        text-align: center;
+        margin-top: -50px;
+    }
+    div.form-icon img {
+        width: 51px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 411px), handheld and (orientation: landscape) {
+    .banner {
+        width: 411px;
+        margin: 0px;
+    }
+
+    div.formContainer {
+        position: relative;
+        width: 411px !important;
+        margin-left: 0px;
+    }
+    div.mobileForm {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+        padding-left: 2px;
+    }
+    .navbar-brand {
+        padding: 8px 9px 0px 9px;
+    }
+    .navbar-nav > li > a {
+        display: block;
+    }
+    .hero {
+        padding: 15px 15px 15px 0;
+    }
+    .hero p.tagline {
+        width: 200px;
+    }
+    .hero h1 {
+        font-size: 1.2em;
+    }
+    img.banner {
+        display: none !important;
+    }
+
+    .hidden-md,
+    hidden-xs {
+        display: none;
+        visibility: hidden;
+    }
+
+
+    .callout-bottom {
+        padding: 1em;
+    }
+    .callout-bottom-inner {
+        background-color: #ffffff;
+        text-align: center;
+        padding: 1em;
+    }
+
+    img.img-responsive.banner {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 360px) and (-webkit-device-pixel-ratio: 3) {
+img {
+        width: 360px;
+    }
+
+    .banner {
+        width: 360px;
+        margin-right: 24px;
+    }
+    .form td,
+    th {
+        padding-left: 8px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 8px;
+        text-align: left;
+        border: 0px;
+        width: auto;
+    }
+    .form {
+        width: auto;
+        padding-right: 4px;
+    }
+
+}
